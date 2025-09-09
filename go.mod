@@ -1,6 +1,8 @@
-module github.com/milbertk/accessControl
+module accessTracking
 
 go 1.22.0
+
+require github.com/milbertk/databasesmng v0.0.0-20250807051040-0a713e69b8b3
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
@@ -12,7 +14,6 @@ require (
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/lib/pq v1.10.9 // indirect
 	github.com/milbertk/class v0.0.0-20250629004519-9d1c6574cc00 // indirect
-	github.com/milbertk/databasesmng v0.0.0-20250807051040-0a713e69b8b3 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect
