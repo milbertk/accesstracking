@@ -1,4 +1,4 @@
-module github.com/milbertk/accesstracking
+module github.com/milbertk/accessTracking
 
 go 1.22.0
 
