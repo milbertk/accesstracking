@@ -16,9 +16,9 @@ func (lt *LoginTracking) Insert() error {
 	query := `
 		INSERT INTO public.logintracking (
 	userid, email, datelocalacces, ip, platform,
-	macaddress, browser, countrycode, gmttime, lang
+	macaddress, browser, countrycode, gmttime, lang, action, jsonstring
 )
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12);
 	`
 
 	_, err = db.Exec(query,
@@ -32,6 +32,8 @@ VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10);
 		lt.CountryCode,
 		lt.GMTTime,
 		lt.Lang,
+		lt.action,
+		lt.jsonstring,
 	)
 
 	if err != nil {
